@@ -1,0 +1,4 @@
+<p>To Do</p>
+<ul>
+    <li *ngFor="let todoId of allTodosIds$ | async"><app-list-item [id]="todoId"></app-list-item></li>
+</ul>

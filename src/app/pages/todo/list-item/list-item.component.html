@@ -1,0 +1,4 @@
+<p *ngIf="todo$ | async as todo">
+    <span [class.isDone]="todo.done">{{ todo.description }}</span>
+    <a (click)="removeTodoHandler(id)" href="#">DELETE</a> - <a (click)="completeTodoHandler(id)" href="#">DONE</a>
+</p>
